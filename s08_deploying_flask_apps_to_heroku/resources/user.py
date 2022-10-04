@@ -1,6 +1,6 @@
 import sqlite3
 from flask_restful import Resource, reqparse
-from s08_deploying_flask_apps_to_heroku.models.user import UserModel
+from models.user import UserModel
 
 
     

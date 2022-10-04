@@ -1,7 +1,7 @@
 import sqlite3
 from flask_restful import Resource, reqparse
 from flask_jwt import jwt_required
-from s08_deploying_flask_apps_to_heroku.models.item import ItemModel
+from models.item import ItemModel
 
 class ItemsList(Resource):
     @jwt_required()

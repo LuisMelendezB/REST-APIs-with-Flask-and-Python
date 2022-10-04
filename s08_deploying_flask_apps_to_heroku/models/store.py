@@ -1,5 +1,5 @@
-from s08_deploying_flask_apps_to_heroku.db import db
-from s08_deploying_flask_apps_to_heroku.models.item import ItemModel
+from db import db
+from models.item import ItemModel
 
 class StoreModel(db.Model):
     __tablename__ = "stores"

@@ -1,4 +1,4 @@
-from db import db
+from s08_deploying_flask_apps_to_heroku.db import db
 class UserModel(db.Model):
 
     __tablename__ = "users"

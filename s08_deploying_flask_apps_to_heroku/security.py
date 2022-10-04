@@ -1,4 +1,4 @@
-from models.user import UserModel
+from s08_deploying_flask_apps_to_heroku.models.user import UserModel
 
 
 def authenticate(username, password):

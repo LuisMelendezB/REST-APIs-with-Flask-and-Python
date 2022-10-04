@@ -1,4 +1,6 @@
+# REST-APIs-with-Flask-and-Python
 
+Code used in the udemy course REST-APIs-with-Flask-and-Python (pre update september 2022).
 ## Installation
 
 ```bash

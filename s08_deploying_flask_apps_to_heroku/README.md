@@ -15,7 +15,7 @@ Use API collection at s08_deploying_flask_apps_to_heroku.postman_collection and 
 
 **_/items_** \
 **GET** \
-Retrieve all items
+Retrieve all items, this resource is JWT protected, use /auth resource with a valid username and password or register a new one in /resiter resource (see below).
 
 **_/item/{name}_** \
 **GET** \

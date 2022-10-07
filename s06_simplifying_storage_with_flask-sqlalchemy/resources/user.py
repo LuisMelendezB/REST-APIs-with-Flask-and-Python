@@ -3,6 +3,14 @@ from flask_restful import Resource, reqparse
 from models.user import UserModel
 
 
+class UserDelete(Resource):
+    def delete(self, username):
+        user = UserModel.find_by_username(username)
+        if user:
+            user.delete_from_db()
+
+        return {"message":"User deleted"}, 
+
     
 class UserRegister(Resource):
 
@@ -25,8 +33,6 @@ class UserRegister(Resource):
 
         data = UserRegister.parser.parse_args()
 
-        print(data)
-
         if UserModel.find_by_username(data['username']):
             return {"message":"An user with that username already exists"}, 400
 
@@ -34,3 +40,4 @@ class UserRegister(Resource):
         user.save_to_db()
 
         return {"message":"User created successfully"}, 201
+

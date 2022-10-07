@@ -23,7 +23,7 @@ class Store(Resource):
         except:
             return {'message':'An error ocurred creating store'}, 500
         
-        return store.json()
+        return store.json(), 201
 
 
     def delete (self, name):
